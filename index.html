@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Triple Crown Properties LLC — Real Estate Investment</title>
+  <meta name="description" content="Triple Crown Properties LLC is a US-based real estate investment company focused on identifying and acquiring residential investment opportunities nationwide." />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="Triple Crown Properties LLC" />
+  <meta property="og:description" content="A US-based real estate investment company focused on residential property acquisition." />
+  <meta property="og:type"        content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    /* Fade-in utility */
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity .55s ease, transform .55s ease; }
+    .fade-in.visible { opacity: 1; transform: none; }
+  </style>
+</head>
+<body>
+
+<!-- =====================================================================
+     NAVIGATION
+     ===================================================================== -->
+<nav id="navbar" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo" aria-label="Triple Crown Properties — home">
+      <!-- Crown icon (inline SVG, no external dependency) -->
+      <svg class="nav-logo-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <path d="M4 24L8 12L14 18L16 10L18 18L24 12L28 24H4Z" fill="currentColor" opacity=".9"/>
+        <rect x="4" y="24" width="24" height="3" rx="1.5" fill="currentColor"/>
+      </svg>
+      <div class="nav-logo-text">
+        Triple Crown Properties
+        <span>LLC</span>
+      </div>
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">What We Do</a></li>
+      <li><a href="#areas">Areas</a></li>
+      <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+    </ul>
+
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="nav-mobile" role="navigation" aria-label="Mobile navigation">
+    <a href="#about">About</a>
+    <a href="#services">What We Do</a>
+    <a href="#areas">Areas of Operation</a>
+    <a href="#contact">Contact Us</a>
+    <a href="#sms-terms">SMS Terms</a>
+    <a href="#privacy">Privacy Policy</a>
+    <a href="#tos">Terms of Service</a>
+  </div>
+</nav>
+
+
+<!-- =====================================================================
+     HERO
+     ===================================================================== -->
+<section id="hero" aria-labelledby="hero-heading">
+  <div class="hero-pattern" aria-hidden="true"></div>
+  <div class="hero-content">
+
+    <!-- Left column -->
+    <div>
+      <p class="hero-eyebrow">Real Estate Investment &bull; United States</p>
+      <h1 class="hero-title" id="hero-heading">
+        Investing in <em>American</em><br/>Real Estate Opportunities
+      </h1>
+      <p class="hero-sub">
+        Triple Crown Properties LLC identifies and acquires residential real estate investment opportunities across the United States. We operate with integrity, diligence, and a long-term perspective.
+      </p>
+      <div class="hero-actions">
+        <a href="#about" class="btn btn-primary">Learn About Us</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </div>
+
+    <!-- Right column — stat cards -->
+    <div>
+      <div class="hero-card-wrap">
+
+        <div class="hero-stat-card">
+          <div class="stat-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+          </div>
+          <div class="stat-val">Residential</div>
+          <div class="stat-lbl">Focus Market</div>
+        </div>
+
+        <div class="hero-stat-card">
+          <div class="stat-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/>
+              <path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/>
+            </svg>
+          </div>
+          <div class="stat-val">Nationwide</div>
+          <div class="stat-lbl">Reach</div>
+        </div>
+
+        <div class="hero-stat-card">
+          <div class="stat-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+            </svg>
+          </div>
+          <div class="stat-val">Active</div>
+          <div class="stat-lbl">Acquisition Pipeline</div>
+        </div>
+
+        <div class="hero-stat-card">
+          <div class="stat-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <div class="stat-val">Integrity</div>
+          <div class="stat-lbl">Core Value</div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =====================================================================
+     ABOUT
+     ===================================================================== -->
+<section id="about" aria-labelledby="about-heading">
+  <div class="container">
+    <div class="about-grid">
+
+      <!-- Left -->
+      <div class="fade-in">
+        <span class="section-label">Who We Are</span>
+        <h2 class="section-title" id="about-heading">A Focused, Principled Investment Company</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <p class="section-intro">
+          Triple Crown Properties LLC is a privately held real estate investment company operating in the United States. We focus on residential properties, approaching every opportunity with thorough due diligence and a commitment to ethical, transparent business practices.
+        </p>
+        <div class="about-pillars">
+
+          <div class="pillar">
+            <div class="pillar-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
+              </svg>
+            </div>
+            <div class="pillar-body">
+              <h4>Due Diligence First</h4>
+              <p>Every property is evaluated through careful research, market analysis, and professional assessment before any acquisition decision is made.</p>
+            </div>
+          </div>
+
+          <div class="pillar">
+            <div class="pillar-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/>
+              </svg>
+            </div>
+            <div class="pillar-body">
+              <h4>Transparent Communication</h4>
+              <p>We maintain clear, honest communication with partners, property owners, and all parties involved in our transactions.</p>
+            </div>
+          </div>
+
+          <div class="pillar">
+            <div class="pillar-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+              </svg>
+            </div>
+            <div class="pillar-body">
+              <h4>Long-Term Perspective</h4>
+              <p>Our investment approach prioritizes sustainable value creation over short-term gains, building a stable and responsible portfolio.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Right -->
+      <div class="about-visual fade-in">
+        <div class="about-visual-box">
+          <h3>Our Mission</h3>
+          <p>To identify, acquire, and manage residential real estate assets across the United States through disciplined investment practices, responsible ownership, and a commitment to value creation for all stakeholders.</p>
+          <div class="about-values">
+            <div class="value-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Integrity in every transaction</span>
+            </div>
+            <div class="value-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Thorough underwriting and risk assessment</span>
+            </div>
+            <div class="value-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Compliance with applicable laws and regulations</span>
+            </div>
+            <div class="value-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Respectful engagement with all counterparties</span>
+            </div>
+            <div class="value-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Responsible asset stewardship</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- =====================================================================
+     WHAT WE DO
+     ===================================================================== -->
+<section id="services" aria-labelledby="services-heading">
+  <div class="container">
+    <div class="services-header fade-in">
+      <span class="section-label">What We Do</span>
+      <h2 class="section-title" id="services-heading">Our Investment Activities</h2>
+      <div class="divider" style="margin: 18px auto 0;" aria-hidden="true"></div>
+      <p class="section-intro mt-24">
+        We focus on residential real estate opportunities across the United States, applying a disciplined process from identification through acquisition and ongoing management.
+      </p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card fade-in">
+        <div class="service-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+        </div>
+        <h3>Opportunity Identification</h3>
+        <p>We actively research residential real estate markets to locate properties that meet our investment criteria, including off-market and distressed opportunities.</p>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>
+            <polyline points="10 9 9 9 8 9"/>
+          </svg>
+        </div>
+        <h3>Property Acquisition</h3>
+        <p>We conduct thorough due diligence prior to acquisition, including title review, physical inspection, market analysis, and financial underwriting to inform each purchase decision.</p>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+        </div>
+        <h3>Residential Properties</h3>
+        <p>Our primary focus is single-family and small multi-family residential properties across diverse US markets, with emphasis on stable neighborhoods with strong fundamentals.</p>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+          </svg>
+        </div>
+        <h3>Market Analysis</h3>
+        <p>We monitor local housing market conditions, demographic trends, employment data, and comparable sales to support sound investment decisions and portfolio management.</p>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <h3>Risk Management</h3>
+        <p>We apply conservative underwriting standards and maintain appropriate insurance, legal structures, and compliance practices to protect our assets and business operations.</p>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 00-3-3.87"/>
+            <path d="M16 3.13a4 4 0 010 7.75"/>
+          </svg>
+        </div>
+        <h3>Seller &amp; Partner Relations</h3>
+        <p>We engage with property owners, agents, and business partners in a straightforward, professional manner. All agreements are reduced to writing before any transaction proceeds.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- =====================================================================
+     AREAS OF OPERATION
+     ===================================================================== -->
+<section id="areas" aria-labelledby="areas-heading">
+  <div class="container">
+    <div class="areas-grid">
+
+      <div class="fade-in">
+        <span class="section-label">Where We Operate</span>
+        <h2 class="section-title" id="areas-heading">Areas of Operation</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <p style="color:var(--muted); font-size:.95rem; line-height:1.75; margin-bottom:8px;">
+          Triple Crown Properties LLC actively evaluates residential real estate investment opportunities across the United States. We concentrate on markets where housing demand, price stability, and investment fundamentals align with our strategy.
+        </p>
+        <p style="color:var(--muted); font-size:.95rem; line-height:1.75; margin-bottom:24px;">
+          Our current focus includes — but is not limited to — the following states and regions:
+        </p>
+
+        <div class="areas-list">
+          <div class="area-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Florida
+          </div>
+          <div class="area-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Texas
+          </div>
+          <div class="area-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Georgia
+          </div>
+          <div class="area-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            North Carolina
+          </div>
+          <div class="area-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Ohio
+          </div>
+          <div class="area-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Tennessee
+          </div>
+          <div class="area-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Arizona
+          </div>
+          <div class="area-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Indiana
+          </div>
+        </div>
+
+        <p class="areas-note">We are not limited to the above and evaluate opportunities in additional US markets on a case-by-case basis.</p>
+      </div>
+
+      <div class="fade-in">
+        <div class="areas-map-card">
+          <h3>Investment Criteria</h3>
+          <p>We apply a consistent set of investment criteria when evaluating properties, regardless of location. Our goal is to acquire assets that represent sound, long-term value.</p>
+          <div class="criteria-list">
+            <div class="criteria-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Residential properties in stable or growing markets
+            </div>
+            <div class="criteria-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Clear and marketable title
+            </div>
+            <div class="criteria-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Positive local employment and demographic indicators
+            </div>
+            <div class="criteria-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Reasonable acquisition cost relative to market value
+            </div>
+            <div class="criteria-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Properties with renovation or value-add potential
+            </div>
+            <div class="criteria-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Compliance with all local zoning and code requirements
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- =====================================================================
+     CONTACT
+     ===================================================================== -->
+<section id="contact" aria-labelledby="contact-heading">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Left: info + consent -->
+      <div class="fade-in">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title" id="contact-heading">Contact Us</h2>
+        <div class="divider" aria-hidden="true"></div>
+        <p style="color:var(--muted); font-size:.95rem; line-height:1.75; margin-bottom:28px;">
+          Whether you have a property to discuss, a business inquiry, or simply want to learn more about Triple Crown Properties LLC, we welcome your message. We aim to respond within one business day.
+        </p>
+
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-item-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <!-- TODO: Replace with real email -->
+              <a href="mailto:triplecrownproperties11@gmail.com">triplecrownproperties11@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.86 9.5 19.79 19.79 0 01.77 1.1 2 2 0 012.76 0H5.8a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.16 6.16l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Phone / SMS</h4>
+              <!-- TODO: Replace with real phone number -->
+              <p>+1 (317) 608-5604</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Location</h4>
+              <!-- TODO: Replace with official business address if needed -->
+              <p>5534 SAINT JOE ROAD, FORT WAYNE, IN 46835</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SMS Consent Notice -->
+        <div class="sms-consent-box" role="note">
+          <strong>SMS Consent Notice</strong>
+          By submitting your information or contacting us, you agree to receive SMS messages from Triple Crown Properties LLC regarding your inquiry, property opportunities, appointment coordination, and business-related follow-ups. Message and data rates may apply. Message frequency may vary. Reply STOP to opt out or HELP for assistance.
+          <br/><br/>
+          You may opt out of SMS communications at any time by replying <strong>STOP</strong>. For help, reply <strong>HELP</strong> or contact us directly.
+        </div>
+      </div>
+
+      <!-- Right: form -->
+      <div class="fade-in">
+        <div class="contact-form">
+          <h3>Send a Message</h3>
+          <p class="form-sub">All fields marked * are required.</p>
+
+          <!--
+            DEPLOYMENT NOTES:
+            - Netlify: add data-netlify="true" and name="contact" to the <form> tag
+            - Formspree: set action="https://formspree.io/f/YOUR_FORM_ID" on the <form> tag
+          -->
+          <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+            <input type="hidden" name="_subject" value="New Inquiry — Triple Crown Properties LLC" />
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" required autocomplete="given-name" placeholder="Jane" />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" required autocomplete="family-name" placeholder="Smith" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required autocomplete="email" placeholder="jane@example.com" />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone / Mobile Number</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+1 (555) 000-0000" />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <select id="subject" name="subject" required>
+                <option value="">Select a topic…</option>
+                <option>Property Inquiry</option>
+                <option>Business Partnership</option>
+                <option>General Question</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" required placeholder="Please provide details about your inquiry…"></textarea>
+            </div>
+
+            <!-- SMS Consent Checkbox -->
+            <div class="form-checkbox">
+              <input type="checkbox" id="smsConsent" name="smsConsent" value="yes" />
+              <label for="smsConsent">
+                I agree to receive SMS messages from Triple Crown Properties LLC related to my inquiry, property opportunities, appointment coordination, and business follow-ups. Message &amp; data rates may apply. Reply STOP to opt out at any time. See our <a href="#sms-terms">SMS Messaging Terms</a> and <a href="#privacy">Privacy Policy</a>.
+              </label>
+            </div>
+
+            <button type="submit" class="btn-submit">Send Message</button>
+
+            <div class="form-success" role="status" aria-live="polite">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="margin:0 auto 10px;color:#2e7d32;">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+              <p style="font-size:1rem; font-weight:600;">Message sent — thank you!</p>
+              <p style="font-size:.875rem; color:var(--muted); margin-top:6px;">We'll be in touch within one business day.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- =====================================================================
+     SMS MESSAGING TERMS
+     ===================================================================== -->
+<section id="sms-terms" class="policy-section" aria-labelledby="sms-heading">
+  <div class="container">
+    <div class="policy-content fade-in">
+      <span class="section-label">Compliance</span>
+      <h2 class="section-title" id="sms-heading">SMS Messaging Terms</h2>
+      <div class="divider" aria-hidden="true"></div>
+
+      <h3>Program Description</h3>
+      <p>Triple Crown Properties LLC may send SMS (text) messages to individuals who have voluntarily provided their mobile phone number and consented to receive such communications. Messages may include responses to inquiries, property-related information, appointment coordination, and general business follow-ups.</p>
+
+      <h3>Consent</h3>
+      <div class="policy-highlight">
+        By submitting your contact information through our website or otherwise providing your mobile number to Triple Crown Properties LLC, you agree to receive SMS messages from Triple Crown Properties LLC regarding your inquiry, property opportunities, appointment coordination, and business-related follow-ups. Message and data rates may apply. Message frequency may vary. Reply STOP to opt out or HELP for assistance.
+      </div>
+      <p>Consent to receive SMS messages is not a condition of any purchase, agreement, or business transaction.</p>
+
+      <h3>Opt-Out</h3>
+      <p>You may opt out of SMS communications at any time by replying <strong>STOP</strong> to any message you receive from us. After opting out, you will receive a single confirmation message and no further SMS messages will be sent unless you re-consent.</p>
+
+      <h3>Help</h3>
+      <p>For assistance, reply <strong>HELP</strong> to any SMS message or contact us directly at <a href="mailto:contact@triplecrownpropertiesllc.com">contact@triplecrownpropertiesllc.com</a>.</p>
+
+      <h3>Message &amp; Data Rates</h3>
+      <p>Standard message and data rates may apply based on your mobile carrier and plan. Triple Crown Properties LLC is not responsible for any charges from your carrier related to SMS communications.</p>
+
+      <h3>Supported Carriers</h3>
+      <p>Our SMS program is available through most major US wireless carriers. Delivery is not guaranteed across all carriers or devices.</p>
+
+      <h3>Privacy</h3>
+      <p>We will not share your mobile phone number or SMS opt-in data with third parties for marketing purposes. See our <a href="#privacy">Privacy Policy</a> for full details.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- =====================================================================
+     PRIVACY POLICY
+     ===================================================================== -->
+<section id="privacy" class="policy-section" aria-labelledby="privacy-heading">
+  <div class="container">
+    <div class="policy-content fade-in">
+      <span class="section-label">Legal</span>
+      <h2 class="section-title" id="privacy-heading">Privacy Policy</h2>
+      <div class="divider" aria-hidden="true"></div>
+      <p><em>Effective Date: May 28, 2025</em></p>
+
+      <h3>Overview</h3>
+      <p>Triple Crown Properties LLC ("we," "us," or "our") respects your privacy. This Privacy Policy explains how we collect, use, and protect information you provide when visiting our website or contacting us.</p>
+
+      <h3>Information We Collect</h3>
+      <p>We collect personal information only when you voluntarily provide it to us, such as when you:</p>
+      <ul>
+        <li>Submit a contact form on our website</li>
+        <li>Send us an email or call us directly</li>
+        <li>Provide your information in connection with a business inquiry</li>
+      </ul>
+      <p>The types of information we may collect include your name, email address, phone number, and the content of your message or inquiry.</p>
+
+      <h3>How We Use Your Information</h3>
+      <p>We use the information you provide solely for legitimate business purposes, including:</p>
+      <ul>
+        <li>Responding to your inquiries</li>
+        <li>Coordinating business communication and follow-ups</li>
+        <li>Scheduling property-related appointments or discussions</li>
+        <li>Providing service-related updates relevant to your inquiry</li>
+      </ul>
+
+      <h3>SMS &amp; Mobile Communications</h3>
+      <div class="policy-highlight">
+        We do not sell, rent, or share mobile opt-in data or SMS consent information with third parties for marketing purposes. Your mobile number and consent status are used exclusively for the purposes described in our <a href="#sms-terms">SMS Messaging Terms</a>.
+      </div>
+
+      <h3>Information Sharing</h3>
+      <p>We do not sell, rent, or trade your personal information to any third party. We do not share your contact information with third parties for marketing purposes. We may share information as required by law, legal process, or to protect the rights of our business.</p>
+
+      <h3>Data Retention</h3>
+      <p>We retain your information only as long as necessary to fulfill the purpose for which it was collected or as required by applicable law.</p>
+
+      <h3>Data Security</h3>
+      <p>We take reasonable measures to protect your information from unauthorized access, disclosure, or misuse. However, no method of transmission over the internet is completely secure.</p>
+
+      <h3>Your Rights</h3>
+      <p>You may contact us at any time to request access to, correction of, or deletion of personal information we hold about you. To make such a request, please contact us at <a href="mailto:contact@triplecrownpropertiesllc.com">contact@triplecrownpropertiesllc.com</a>.</p>
+
+      <h3>Cookies</h3>
+      <p>Our website may use basic cookies or analytics tools to understand site usage. We do not use cookies to serve targeted advertising or share browsing data with third parties.</p>
+
+      <h3>Changes to This Policy</h3>
+      <p>We may update this Privacy Policy from time to time. Any updates will be posted on this page with a revised effective date.</p>
+
+      <h3>Contact</h3>
+      <p>For privacy-related inquiries, contact us at <a href="mailto:contact@triplecrownpropertiesllc.com">contact@triplecrownpropertiesllc.com</a>.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- =====================================================================
+     TERMS OF SERVICE
+     ===================================================================== -->
+<section id="tos" class="policy-section" aria-labelledby="tos-heading">
+  <div class="container">
+    <div class="policy-content fade-in">
+      <span class="section-label">Legal</span>
+      <h2 class="section-title" id="tos-heading">Terms of Service</h2>
+      <div class="divider" aria-hidden="true"></div>
+      <p><em>Effective Date: May 28, 2025</em></p>
+
+      <h3>Use of This Website</h3>
+      <p>This website is operated by Triple Crown Properties LLC and is provided for general business information purposes only. By accessing or using this website, you agree to these Terms of Service.</p>
+
+      <h3>No Professional Advice</h3>
+      <div class="policy-highlight">
+        Nothing on this website constitutes financial, investment, legal, tax, or accounting advice. All content is provided for general informational purposes only. You should consult qualified professionals before making any financial or real estate investment decisions.
+      </div>
+
+      <h3>No Guaranteed Returns</h3>
+      <p>Triple Crown Properties LLC makes no representations or warranties regarding investment returns, property values, or future performance. Real estate investment involves risk, and past performance is not indicative of future results.</p>
+
+      <h3>No Binding Agreement</h3>
+      <p>Communication with Triple Crown Properties LLC — including through this website, by email, or by phone — does not create a binding contract, partnership, agency relationship, or commitment of any kind. Any real estate transaction or business agreement is subject to separate written contracts and mutual agreement following proper due diligence.</p>
+
+      <h3>Accuracy of Information</h3>
+      <p>We make reasonable efforts to ensure the information on this website is accurate and current. However, we make no warranties of any kind regarding the completeness, accuracy, or reliability of the content. We reserve the right to modify or remove content at any time without notice.</p>
+
+      <h3>Intellectual Property</h3>
+      <p>All content on this website, including text, graphics, and design, is the property of Triple Crown Properties LLC and may not be reproduced or used without prior written permission.</p>
+
+      <h3>Third-Party Links</h3>
+      <p>This website may contain links to external websites. Triple Crown Properties LLC is not responsible for the content or practices of any third-party sites.</p>
+
+      <h3>Limitation of Liability</h3>
+      <p>To the maximum extent permitted by law, Triple Crown Properties LLC shall not be liable for any damages arising from your use of, or inability to use, this website or its content.</p>
+
+      <h3>Governing Law</h3>
+      <p>These Terms of Service are governed by the laws of the United States and the state in which Triple Crown Properties LLC is registered, without regard to conflict of law principles.</p>
+
+      <h3>Changes to These Terms</h3>
+      <p>We reserve the right to update these Terms of Service at any time. Continued use of this website after any such changes constitutes acceptance of the updated terms.</p>
+
+      <h3>Contact</h3>
+      <p>For questions regarding these Terms, contact us at <a href="mailto:contact@triplecrownpropertiesllc.com">contact@triplecrownpropertiesllc.com</a>.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- =====================================================================
+     FOOTER
+     ===================================================================== -->
+<footer>
+  <div class="footer-top">
+
+    <div class="footer-brand">
+      <a href="#hero" class="nav-logo" style="text-decoration:none;" aria-label="Triple Crown Properties — home">
+        <svg class="nav-logo-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <path d="M4 24L8 12L14 18L16 10L18 18L24 12L28 24H4Z" fill="currentColor" opacity=".9"/>
+          <rect x="4" y="24" width="24" height="3" rx="1.5" fill="currentColor"/>
+        </svg>
+        <div class="nav-logo-text">
+          Triple Crown Properties
+          <span>LLC</span>
+        </div>
+      </a>
+      <p>A US-based real estate investment company focused on identifying and acquiring residential properties with sound long-term fundamentals.</p>
+    </div>
+
+    <div class="footer-col">
+      <h5>Company</h5>
+      <ul role="list">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">What We Do</a></li>
+        <li><a href="#areas">Areas of Operation</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h5>Legal &amp; Compliance</h5>
+      <ul role="list">
+        <li><a href="#sms-terms">SMS Messaging Terms</a></li>
+        <li><a href="#privacy">Privacy Policy</a></li>
+        <li><a href="#tos">Terms of Service</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <span>&copy; <span id="year"></span> Triple Crown Properties LLC. All rights reserved.</span>
+    <span>United States</span>
+  </div>
+
+  <div class="footer-disclaimer">
+    <strong style="color:rgba(255,255,255,.4);">Disclaimer:</strong> This website is for general informational purposes only. Nothing on this website constitutes financial, investment, legal, or tax advice. Real estate investment involves risk. Triple Crown Properties LLC makes no representations regarding investment returns or property values.
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
